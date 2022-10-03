@@ -2,7 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    list = []
+    list = [2]
     i = 1
     while i <= (number_of_primes + 1):
         for j in range(2, i):
