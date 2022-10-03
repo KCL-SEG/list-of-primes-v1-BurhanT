@@ -8,6 +8,5 @@ def primes(number_of_primes):
             if (i % j == 0):
                 break
             else:
-                list.add(i)
-
+                list.append(i)
     return list
