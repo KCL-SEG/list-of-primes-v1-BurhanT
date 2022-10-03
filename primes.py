@@ -6,9 +6,10 @@ def primes(number_of_primes):
     i = 1
     while len(list) < number_of_primes:
         for j in range(2, i):
-            if i % j == 0 or i in list:
+            if i % j == 0:
                 break
             else:
-                list.append(i)
+                if i not in list:
+                    list.append(i)
         i += 1
     return list
