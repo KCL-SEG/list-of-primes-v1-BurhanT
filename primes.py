@@ -1,15 +1,18 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
+def Prime(n):
+    for i in range(2,n//2+1):
+        if(n%i==0):
+            return(0)
+    return(1)
 
 def primes(number_of_primes):
-    list = [2]
-    i = 1
-    while len(list) < number_of_primes:
-        for j in range(2, i):
-            if i % j == 0:
+    list = []
+    i = 2
+    while(1):
+        if(Prime(i)):
+            list.append(i)
+            if(len(list)==number_of_primes):
                 break
-            else:
-                if i not in list:
-                    list.append(i)
-        i += 1
+        i+=1
     return list
